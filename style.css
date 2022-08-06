@@ -1,0 +1,160 @@
+/* || Basic Style */
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.4rem;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: aliceblue;
+}
+
+.container {
+  border: 1px solid grey;
+  padding: 0 24px;
+  margin: 16px;
+  background-color: white;
+  background-image: url(images/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: .5em 0;
+}
+
+h2 {
+  font-size: 1.6rem;
+  margin: .5em 0;
+}
+
+p {
+  margin: .5em 0;
+}
+
+ul,
+dl,
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+dd {
+  margin: .5em 0;
+  padding-left: 2em;
+  background-image: url(images/dash.svg);
+  background-position: 0 0;
+  background-size: 1.6em 1.6em;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+  color: #274dca;
+}
+
+hr {
+  border: none;
+  border-top: 4px solid #3f59a8;
+}
+
+.item-title {
+  font-weight: bold;
+}
+
+.period {
+  font-size: 1.2rem;
+  color: #0089b2;
+  margin: 0 .5em;
+}
+
+/* || Print Style */
+@media print {
+  body {
+    background-color: white;
+  }
+  .container {
+    border: none;
+    margin: 0;
+    background: white;
+  }
+}
+
+/* || Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+
+header .name {
+  font-size: 2.5rem;
+  margin: .5em 0;
+}
+
+p.job {
+  color: #0089b2;
+  font-size: 1.6rem;
+}
+
+.contact li {
+  padding-right: 2em;
+  text-align: right;
+  background-position: top .2em right;
+  background-size: 1.2em 1.2em;
+  background-repeat: no-repeat;
+}
+
+li.tel {
+  background-image: url(images/tel.svg);
+}
+
+li.email {
+  background-image: url(images/email.svg);
+}
+
+li.blog {
+  background-image: url(images/web.svg);
+}
+
+li.github {
+  background-image: url(images/github.svg);
+}
+
+/* || Education Section */
+.education-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.education-item>li {
+  flex: 1;
+}
+
+.education-item>li:last-of-type {
+  flex: none;
+}
+
+/* || Job Experience Section */
+
+/* || Project Section */
+
+/* || Honor Section */
+
+.honor ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* || Skill Section */
+.honor li, .skills li {
+  padding-left: 2em;
+  background-image: url(images/round.svg);
+  background-position: 0 0;
+  background-size: 1.6em 1.6em;
+  background-repeat: no-repeat;
+}
