@@ -145,13 +145,13 @@ li.github {
 
 /* || Honor Section */
 
-.honor ul {
+.list-2col {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
 
 /* || Skill Section */
-.honor li, .skills li {
+.list-2col .list-1col {
   padding-left: 2em;
   background-image: url(images/round.svg);
   background-position: 0 0;
