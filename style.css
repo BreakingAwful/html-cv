@@ -1,23 +1,39 @@
 /* || Basic Style */
+* {
+  padding: 0;
+  margin: 0;
+}
+
 html {
-  font-size: 10px;
+  font-size: 12px;
 }
 
 body {
   font-size: 1.4rem;
-  max-width: 800px;
+  width: 21cm;
+  height: 29.7cm;
   margin: 0 auto;
   background-color: aliceblue;
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
   border: 1px solid grey;
   padding: 0 24px;
-  margin: 16px;
   background-color: white;
   background-image: url(images/background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  height: 100%;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 1.5em;
 }
 
 h1 {
@@ -39,6 +55,10 @@ dl,
 ol {
   list-style: none;
   padding: 0;
+}
+
+dl>div {
+  margin-top: .5em;
 }
 
 dd {
