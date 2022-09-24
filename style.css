@@ -75,6 +75,7 @@ hr {
   body {
     background-color: white;
   }
+
   .container {
     border: none;
     margin: 0;
@@ -151,7 +152,8 @@ li.github {
 }
 
 /* || Skill Section */
-.list-2col .list-1col {
+.list-2col>li,
+.list-1col>li {
   padding-left: 2em;
   background-image: url(images/round.svg);
   background-position: 0 0;
