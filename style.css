@@ -42,7 +42,7 @@ ol {
 }
 
 dd {
-  margin: .5em 0;
+  margin: 0;
   padding-left: 2em;
   background-image: url(images/dash.svg);
   background-position: 0 0;
